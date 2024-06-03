@@ -1,11 +1,16 @@
-productos = ['Manzanas', 'Bananas', 'Cerezas', 'Duraznos', 'Fresas'];
 
-for ( producto of productos) {
-    
-    h2 = document.createElement('h2');
+const productos = ["prod1", "prod2","prod3","prod4", "prod5"]
 
-    h2.innerHTML = producto;
-
-    document.body.appendChild(h2);
-    
+for(let prod of productos){
+    let h2= document.createElement('h2');
+    h2.innerHTML= "<p> Nombre: <span style= 'color: blue'> "+prod+"</span> </p>"
+    document.body.appendChild(h2)
 }
+
+console.dir(document)
+/** 
+h2.innerHTML= '<p> Nombre: <span style= "color: red"> ${prod}</p>'
+*/
+
+
+
